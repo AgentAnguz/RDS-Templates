@@ -164,7 +164,7 @@
         "metadata": {
           "description": "Uri to download file that is executed in the custom script extension"
         },
-        "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/HCI/HciCustomScript.ps1"
+        "defaultValue": "https://raw.githubusercontent.com/AgentAnguz/RDS-Templates/master/ARM-wvd-templates/HCI/HciCustomScript.ps1"
       },
       "fileName": {
         "type": "string",
@@ -178,7 +178,7 @@
         "metadata": {
           "description": "The base URI where the Configuration.zip script is located to install the AVD agent on the VM"
         },
-        "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+        "defaultValue": "https://raw.githubusercontent.com/AgentAnguz/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
       },
       "aadJoin": {
         "type": "bool",
