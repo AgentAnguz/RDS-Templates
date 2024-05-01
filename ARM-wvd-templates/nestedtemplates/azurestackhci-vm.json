@@ -247,9 +247,6 @@
         "name": "[concat(parameters('rdshPrefix'), add(copyindex(), parameters('vmInitialNumber')))]",
         "location": "[parameters('location')]",
         "kind": "HCI",
-        "identity": {
-            "type": "SystemAssigned"
-        },
         "copy": {
           "name": "rdsh-hci-hybridcompute-loop",
           "count": "[parameters('rdshNumberOfInstances')]"
