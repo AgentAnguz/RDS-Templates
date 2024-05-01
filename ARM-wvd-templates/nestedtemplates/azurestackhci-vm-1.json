@@ -56,6 +56,12 @@
         },
         "defaultValue": 0
       },
+      "vmNumberOfInstances": {
+        "type": "int",
+        "metadata": {
+          "description": "Amount of VMs to be created."
+        }
+      },
       "networkInterfaceTags": {
         "type": "object",
         "metadata": {
@@ -219,9 +225,6 @@
         "name": "[concat(parameters('vmNamePrefix'), add(copyindex(), parameters('vmInitialNumber')))]",
         "location": "[parameters('location')]",
         "kind": "HCI",
-        "identity": {
-            "type": "SystemAssigned"
-        },
         "copy": {
           "name": "vm-hci-hybridcompute-loop",
           "count": "[parameters('vmNumberOfInstances')]"
